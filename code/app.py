@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, request, redirect
 from jinja2 import Template
 from os.path import join as path_to
@@ -21,4 +23,4 @@ def hello_world():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port=os.environ.get("PORT", 5000))

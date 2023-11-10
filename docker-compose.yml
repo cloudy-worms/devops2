@@ -1,0 +1,12 @@
+version: "1.0"
+
+services:
+  clouds:
+    build:
+      context: .
+      dockerfile: Dockerfile_good
+    container_name: wa_clouds
+    restart: always
+    command: sh -c "python app.py"
+    ports:
+      - "5001:5000"
