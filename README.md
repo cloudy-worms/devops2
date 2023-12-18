@@ -5,8 +5,16 @@
 Чтобы запустить контейнер:
 
 ```commandline
-docker compose up -d
+docker compose up -d --build
 ```
+##### Запуск плохого контейнера
+![img.png](img.png)
+
+##### Запуск хорошего контейнера
+![img_2.png](img_2.png)
+
+##### Страница после запуска
+![img_1.png](img_1.png)
 
 ## Сравнение Dockerfile'ов
 
